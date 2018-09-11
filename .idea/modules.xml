@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Eureka/Eureka.iml" filepath="$PROJECT_DIR$/Eureka/Eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceFeign/ServiceFeign.iml" filepath="$PROJECT_DIR$/ServiceFeign/ServiceFeign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceOne/ServiceOne.iml" filepath="$PROJECT_DIR$/ServiceOne/ServiceOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceRibbon/ServiceRibbon.iml" filepath="$PROJECT_DIR$/ServiceRibbon/ServiceRibbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudDemo.iml" filepath="$PROJECT_DIR$/SpringCloudDemo.iml" />
+    </modules>
+  </component>
+</project>
