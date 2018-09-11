@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Eureka" />
         <module name="EurekaMonitor" />
+        <module name="EurekaZuul" />
         <module name="ServiceFeign" />
         <module name="ServiceOne" />
         <module name="ServiceRibbon" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="Eureka" target="1.8" />
       <module name="EurekaMonitor" target="1.8" />
+      <module name="EurekaZuul" target="1.8" />
       <module name="ServiceFeign" target="1.8" />
       <module name="ServiceOne" target="1.8" />
       <module name="ServiceRibbon" target="1.8" />

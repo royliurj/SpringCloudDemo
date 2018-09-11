@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: eureka-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+server:
+  port: 5000
+
+zuul:
+  routes:
+    serviceoneapi:
+      path: /serviceoneapi/**
+      serviceId: service-one #使用serviceId可以应用负载均衡策略，如果不使用负载均衡，可以指定url：http://localhost:8001
+    ribbonapi:
+      path: /ribbonapi/**
+      serviceId: service-ribbon
+    feignapi:
+      path: /feignapi/**
+      serviceId: service-feign

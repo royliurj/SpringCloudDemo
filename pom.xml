@@ -14,6 +14,7 @@
         <module>ServiceRibbon</module>
         <module>ServiceFeign</module>
         <module>EurekaMonitor</module>
+        <module>EurekaZuul</module>
     </modules>
 
     <parent>
@@ -70,6 +71,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+        <!--Eureka客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
