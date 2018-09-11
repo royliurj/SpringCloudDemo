@@ -15,4 +15,9 @@ public class FeignController {
     public String hello(){
         return feignService.hello();
     }
+
+    @GetMapping("/hell2")
+    public String hello2(){
+        return feignService.hello2();
+    }
 }
