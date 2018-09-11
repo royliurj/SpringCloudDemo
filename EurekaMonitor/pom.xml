@@ -9,17 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>serviceribbon</artifactId>
+    <artifactId>eurekamonitor</artifactId>
 
     <dependencies>
-
-        <!--负载均衡 Ribbon-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
-            <version>1.2.5.RELEASE</version>
+            <artifactId>spring-cloud-starter-turbine</artifactId>
         </dependency>
-
     </dependencies>
+
 
 </project>

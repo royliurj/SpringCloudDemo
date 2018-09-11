@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka-monitor
+server:
+  ssl:
+    protocol: 6000
+
+turbine:
+  aggregator:
+    clusterConfig: default
+  app-config: service-ribbon, service-feign
+  cluster-name-expression: new String("default")
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:1111/eureka/
+

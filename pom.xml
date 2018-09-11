@@ -13,6 +13,7 @@
         <module>ServiceOne</module>
         <module>ServiceRibbon</module>
         <module>ServiceFeign</module>
+        <module>EurekaMonitor</module>
     </modules>
 
     <parent>
@@ -37,6 +38,19 @@
     </build>
 
     <dependencies>
+
+
+        <!--熔断器 Hystrix-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
+
+        <!--监视熔断器状态-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
