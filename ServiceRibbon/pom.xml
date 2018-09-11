@@ -12,11 +12,20 @@
     <artifactId>serviceribbon</artifactId>
 
     <dependencies>
+
+        <!--负载均衡 Ribbon-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-ribbon</artifactId>
             <version>1.2.5.RELEASE</version>
         </dependency>
+
+        <!--熔断器 Hystrix-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

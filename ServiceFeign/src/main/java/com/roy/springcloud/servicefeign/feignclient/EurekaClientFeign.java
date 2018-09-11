@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(value = "service-one")
+@FeignClient(value = "service-one", fallback = HystrixError.class)
 public interface EurekaClientFeign {
 
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
