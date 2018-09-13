@@ -6,11 +6,11 @@
 #      fail-fast: true
 #      discovery:
 #        enabled: true
-#        serviceId: config-server
+#        service-id: config-server
 #  profiles:
 #    active: dev
 #server:
-#  port: 5009 #8762
+#  port: 8762
 #
 #eureka:
 #  client:

@@ -1,10 +1,31 @@
-#bootstrap比application具有优先的执行顺序，这里的配置就可以使ConfigClient从ConfigServer读取配置信息
+##bootstrap比application具有优先的执行顺序，这里的配置就可以使ConfigClient从ConfigServer读取配置信息
+#spring:
+#  application:
+#    name: config-client
+#  cloud:
+#    config:
+#      uri: http://localhost:5000 #向这个路径读取配置，配置文件的组成{spring.applicatin.name}-{spring.profiles.active} 本例为config-client-dev
+#      fail-fast: true #读取不成功，则执行快速失败
+#  profiles:
+#    active: dev
+
+
 spring:
   application:
     name: config-client
   cloud:
     config:
-      uri: http://localhost:5000 #向这个路径读取配置，配置文件的组成{spring.applicatin.name}-{spring.profiles.active} 本例为config-client-dev
-      fail-fast: true #读取不成功，则执行快速失败
+      fail-fast: true
+      discovery:
+        enabled: true
+        service-id: config-server #从服务名这里获取配置信息
   profiles:
     active: dev
+server:
+  port: 8762
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+
