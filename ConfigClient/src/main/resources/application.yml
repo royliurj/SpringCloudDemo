@@ -1,0 +1,19 @@
+#spring:
+#  application:
+#    name: config-client
+#  cloud:
+#    config:
+#      fail-fast: true
+#      discovery:
+#        enabled: true
+#        serviceId: config-server
+#  profiles:
+#    active: dev
+#server:
+#  port: 5009 #8762
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:1111/eureka/
+#

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ConfigClient/ConfigClient.iml" filepath="$PROJECT_DIR$/ConfigClient/ConfigClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConfigServer/ConfigServer.iml" filepath="$PROJECT_DIR$/ConfigServer/ConfigServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Eureka/Eureka.iml" filepath="$PROJECT_DIR$/Eureka/Eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaMonitor/EurekaMonitor.iml" filepath="$PROJECT_DIR$/EurekaMonitor/EurekaMonitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaZuul/EurekaZuul.iml" filepath="$PROJECT_DIR$/EurekaZuul/EurekaZuul.iml" />

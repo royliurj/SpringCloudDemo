@@ -1,0 +1,26 @@
+server:
+  port: 5000 #8769
+spring:
+  cloud:
+    config:
+      server:
+        git: #Git路径
+#          uri: https://github.com/royliurj/SpringcloudConifg.git
+#          username: ranjun_liu@126.com
+#          password: fromlrj7758521
+#          uri: https://github.com/spring-cloud-samples/config-repo
+          uri: https://github.com/royliurj/SpringcloudConifg
+#          search-paths: respo
+#      label: master
+#        native: #本地路径
+#          search-locations: classpath:/shared # 从本地shared目录下读取配置
+##设置了以后不能从Git上读取配置
+#  profiles:
+#    active: native
+  application:
+    name: config-server
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:1111/eureka/
+
