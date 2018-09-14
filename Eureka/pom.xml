@@ -18,4 +18,14 @@
         </dependency>
     </dependencies>
 
+
+    <build>
+        <plugins>
+            <!--使用Mavan插件的方式启动SpingBoot工程-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -2,9 +2,11 @@ server:
   port: 8001
 spring:
   application:
-    name: service-one
+    name: service-one  #服务名，也就是消费客户端需要的service id
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://localhost:1111/eureka/  #指定服务注册中心的地址
+## 注册中心集群时使用
+#      defaultZone: http://peer2:3333/eureka/  #指定服务注册中心的地址
 

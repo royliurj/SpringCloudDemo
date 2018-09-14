@@ -3,9 +3,37 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost #主机名，线上应该是IP地址
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: false #防止自己注册自己
+    fetch-registry: false       #不需要去检索服务，因为注册中心的职责就是维护服务实例
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+#spring:
+#  profiles:
+#    active: peer2
+---
+spring:
+  profiles: peer1
+server:
+  port: 2222
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:3333/eureka
+---
+spring:
+  profiles: peer2
+server:
+  port: 3333
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:2222/eureka
+
+

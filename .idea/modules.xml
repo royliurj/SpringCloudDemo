@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Eureka/Eureka.iml" filepath="$PROJECT_DIR$/Eureka/Eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaMonitor/EurekaMonitor.iml" filepath="$PROJECT_DIR$/EurekaMonitor/EurekaMonitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaZuul/EurekaZuul.iml" filepath="$PROJECT_DIR$/EurekaZuul/EurekaZuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Model/Model.iml" filepath="$PROJECT_DIR$/Model/Model.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiceFeign/ServiceFeign.iml" filepath="$PROJECT_DIR$/ServiceFeign/ServiceFeign.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiceOne/ServiceOne.iml" filepath="$PROJECT_DIR$/ServiceOne/ServiceOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiceRibbon/ServiceRibbon.iml" filepath="$PROJECT_DIR$/ServiceRibbon/ServiceRibbon.iml" />

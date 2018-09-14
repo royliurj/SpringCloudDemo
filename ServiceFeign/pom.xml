@@ -13,12 +13,32 @@
 
     <dependencies>
 
-        <!--负载均衡Feign-->
+        <!--声明式调用Feign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
             <version>1.2.5.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.roy</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--&lt;!&ndash;使用HttpClient作为网络请求框架&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.netflix.feign</groupId>-->
+            <!--<artifactId>feign-httpclient</artifactId>-->
+            <!--<version>RELEASE</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash;使用Okhttp作为网络请求框架&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.netflix.feign</groupId>-->
+            <!--<artifactId>feign-okhttp</artifactId>-->
+            <!--<version>RELEASE</version>-->
+        <!--</dependency>-->
 
     </dependencies>
 

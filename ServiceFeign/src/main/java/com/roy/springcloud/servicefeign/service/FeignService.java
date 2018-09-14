@@ -1,5 +1,6 @@
 package com.roy.springcloud.servicefeign.service;
 
+import com.roy.springcloud.model.User;
 import com.roy.springcloud.servicefeign.feignclient.Client4ServiceRibbon;
 import com.roy.springcloud.servicefeign.feignclient.EurekaClientFeign;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,5 +21,13 @@ public class FeignService {
 
     public String hello2(){
         return client4ServiceRibbon.hello2();
+    }
+
+    public User user(String name, Integer age){
+        return eurekaClientFeign.hello2(name,age);
+    }
+
+    public String user2(User user){
+        return eurekaClientFeign.hello3(user);
     }
 }

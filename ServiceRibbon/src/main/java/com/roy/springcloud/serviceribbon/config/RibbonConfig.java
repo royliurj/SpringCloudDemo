@@ -7,9 +7,8 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class RibbonConfig {
-
     @Bean
-    @LoadBalanced
+    @LoadBalanced //开启负载均衡功能
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }

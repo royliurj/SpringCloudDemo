@@ -8,3 +8,11 @@ eureka:
     service-url:
       defaultZone: http://localhost:1111/eureka/
 
+
+#ribbon:
+#  eureka:
+#    enable: false #禁止调用Eureka Client获取注册列表
+#
+#stores:
+#  ribbon:
+#    listOfServers: baid.com, google.com #维护一份服务注册地址
