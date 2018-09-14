@@ -1,3 +1,17 @@
+
+
+#spring:
+#  rabbitmq:   #配置rabbitmq
+#    host: 192.168.50.234
+#    port: 5763
+#    username: guest
+#    password: guest
+#
+#management:
+#  security:
+#    enabled: false  #通过消息总线更改配置，需要经过安全验证，这里先把安全验证屏蔽掉
+
+
 #spring:
 #  application:
 #    name: config-client
