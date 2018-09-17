@@ -11,4 +11,11 @@ eureka:
 
 feign:
   hystrix:
-    enabled: true
+    enabled: true #使用熔断功能
+  compression:    #使用压缩功能
+    request:
+      enabled: true
+      mime-types: text/xml,applicaiton/xml,application/json #指定了压缩的请求数据类型
+      min-request-size: 2048 #指定请求大小超过这个数值才进行压缩
+    response:
+      enabled: true

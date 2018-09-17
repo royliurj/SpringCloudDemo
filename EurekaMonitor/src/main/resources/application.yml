@@ -2,14 +2,14 @@ spring:
   application:
     name: eureka-monitor
 server:
-  ssl:
-    protocol: 6000
+  port: 6000
 
 turbine:
   aggregator:
-    clusterConfig: default
-  app-config: service-ribbon, service-feign
-  cluster-name-expression: new String("default")
+    clusterConfig: default                        #配置了服务的监控名
+  app-config: service-ribbon, service-feign       #监控实例
+  cluster-name-expression: new String("default")  #服务集群名，默认default
+
 eureka:
   client:
     service-url:

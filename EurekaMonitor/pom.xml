@@ -12,6 +12,7 @@
     <artifactId>eurekamonitor</artifactId>
 
     <dependencies>
+        <!--依赖Turbine聚合功能-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-turbine</artifactId>

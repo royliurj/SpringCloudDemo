@@ -3,6 +3,7 @@ package com.roy.springcloud.servicefeign.feignclient;
 import com.roy.springcloud.model.User;
 import org.springframework.stereotype.Component;
 
+//服务降级容错类
 @Component
 public class HystrixError implements EurekaClientFeign {
     @Override
@@ -17,6 +18,6 @@ public class HystrixError implements EurekaClientFeign {
 
     @Override
     public String hello3(User user) {
-        return null;
+        return "i am error";
     }
 }

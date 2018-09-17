@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 
+//使用FeignClient和fallback开始熔断器
 @FeignClient(value = "service-one", fallback = HystrixError.class)
 public interface EurekaClientFeign {
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
