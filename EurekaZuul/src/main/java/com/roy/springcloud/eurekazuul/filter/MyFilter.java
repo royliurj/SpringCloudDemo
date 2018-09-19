@@ -15,23 +15,30 @@ public class MyFilter extends ZuulFilter {
 
     private static Logger log = LoggerFactory.getLogger(MyFilter.class);
 
+    //过滤器的类型：pre、post、routing、error
     @Override
     public String filterType() {
         return PRE_TYPE;
     }
 
+    //过滤顺序：值越小，越早执行
     @Override
     public int filterOrder() {
         return 0;
     }
 
+    //表示该过滤器是否过滤逻辑，为true，则执行run方法
     @Override
     public boolean shouldFilter() {
         return true;
     }
 
+    //具体逻辑
     @Override
     public Object run() {
+//        doSomething();
+
+        //获取当前请求上下文
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         Object accessToken = request.getParameter("token");
@@ -48,5 +55,9 @@ public class MyFilter extends ZuulFilter {
         }
         log.info("ok");
         return null;
+    }
+
+    private void doSomething(){
+        throw new RuntimeException("Exit some errors");
     }
 }

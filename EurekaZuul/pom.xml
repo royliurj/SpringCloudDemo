@@ -12,6 +12,7 @@
     <artifactId>eurekazuul</artifactId>
 
     <dependencies>
+        <!--路由网关-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zuul</artifactId>

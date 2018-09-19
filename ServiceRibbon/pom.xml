@@ -12,7 +12,6 @@
     <artifactId>serviceribbon</artifactId>
 
     <dependencies>
-
         <!--负载均衡 Ribbon-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

@@ -8,6 +8,7 @@ eureka:
 server:
   port: 5000
 
+
 zuul:
   routes:
     serviceoneapi:
@@ -19,3 +20,17 @@ zuul:
     feignapi:
       path: /feignapi/**
       serviceId: service-feign
+  ignored-patterns: /ribbonapi/hello/** #忽略该路由，不希望被Api网关进行路由
+
+#  prefix: /v1 #添加版本号，这样访问的路径就为 http://localhost:5000/v1/serviceoneapi/hello
+#    hiapi:
+#      path: /hiapi/**
+#      serviceId: hiapi-v1 #不使用Eureka服务注册列表，使用自己配置的列表，做负载均衡
+#
+#ribbon:
+#  eureka:
+#    enabled: false
+#
+#hiapi-v1:
+#  ribbon:
+#    listOfServers: http://localhost:1234, http://localhost:5678

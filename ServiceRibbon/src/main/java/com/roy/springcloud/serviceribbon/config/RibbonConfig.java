@@ -1,5 +1,6 @@
 package com.roy.springcloud.serviceribbon.config;
 
+import com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,5 +12,9 @@ public class RibbonConfig {
     @LoadBalanced //开启负载均衡功能
     public RestTemplate restTemplate(){
         return new RestTemplate();
+    }
+
+    public HystrixCommandAspect hystrixCommandAspect(){
+        return new HystrixCommandAspect();
     }
 }
