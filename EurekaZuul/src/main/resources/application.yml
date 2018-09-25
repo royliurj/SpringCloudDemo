@@ -1,13 +1,24 @@
+#基本路由功能
 spring:
   application:
     name: eureka-zuul
+#  zipkin:
+#    base-url: http://localhost:9411 #zipkin server地址
+#  sleuth:
+#    sampler:
+#      percentage: 1.0 #即100%的概率将链路的数据上传给Zipkin Server，默认为0.1
+#  rabbitmq:   #配置rabbitmq
+#    host: 192.168.50.234
+#    port: 5763
+#    username: guest
+#    password: guest
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:1111/eureka/
 server:
   port: 5000
-
 
 zuul:
   routes:
@@ -21,6 +32,8 @@ zuul:
       path: /feignapi/**
       serviceId: service-feign
   ignored-patterns: /ribbonapi/hello/** #忽略该路由，不希望被Api网关进行路由
+
+
 
 #  prefix: /v1 #添加版本号，这样访问的路径就为 http://localhost:5000/v1/serviceoneapi/hello
 #    hiapi:

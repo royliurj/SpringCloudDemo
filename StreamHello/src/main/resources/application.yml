@@ -1,0 +1,7 @@
+# rabbitmq的配置
+spring:
+  rabbitmq:   #配置rabbitmq
+    host: 192.168.50.234
+    port: 5763
+    username: guest
+    password: guest

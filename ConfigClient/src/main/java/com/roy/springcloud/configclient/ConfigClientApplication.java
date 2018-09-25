@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-//@RefreshScope //开启不重启服务的情况下更新配置
+@RefreshScope //开启不重启服务的情况下更新配置
 @EnableEurekaClient
 @SpringBootApplication
 public class ConfigClientApplication {

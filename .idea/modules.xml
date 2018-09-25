@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/ServiceOne/ServiceOne.iml" filepath="$PROJECT_DIR$/ServiceOne/ServiceOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiceRibbon/ServiceRibbon.iml" filepath="$PROJECT_DIR$/ServiceRibbon/ServiceRibbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloudDemo.iml" filepath="$PROJECT_DIR$/SpringCloudDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StreamHello/StreamHello.iml" filepath="$PROJECT_DIR$/StreamHello/StreamHello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZipkenServer/ZipkenServer.iml" filepath="$PROJECT_DIR$/ZipkenServer/ZipkenServer.iml" />
     </modules>
   </component>
 </project>

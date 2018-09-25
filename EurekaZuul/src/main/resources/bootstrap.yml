@@ -1,0 +1,28 @@
+##用于从配置服务中心获取配置
+#spring:
+#  application:
+#    name: api-gateway
+#  cloud:
+#    config:
+#      fail-fast: true
+#      discovery:
+#        enabled: true
+#        service-id: config-server #从服务名这里获取配置信息
+##    config:
+##      uri: http://localhost:5000/
+#  profiles:
+#    active: dev
+#
+#
+#server:
+#  port: 5556
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:1111/eureka/
+#
+##/关闭验证
+#management:
+#  security:
+#    enabled: false

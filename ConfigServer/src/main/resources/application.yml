@@ -9,7 +9,7 @@ spring:
         git: #Git路径
           uri: https://github.com/royliurj/SpringcloudConifg
 #          search-paths: /config # 子目录
-      label: master   # 分支
+      label: master  # 分支
 ## 公共的库不需要用户名密码
 #          username: username
 #          password: password
@@ -21,6 +21,10 @@ eureka:
     service-url:
       defaultZone: http://localhost:1111/eureka/
 
+security:
+  user:
+    name: user
+    password: 123456
 
 ## ConfigServer从本地读取配置
 #spring:

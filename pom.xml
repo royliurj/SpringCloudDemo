@@ -18,6 +18,8 @@
         <module>ConfigServer</module>
         <module>ConfigClient</module>
         <module>Model</module>
+        <module>ZipkenServer</module>
+        <module>StreamHello</module>
     </modules>
 
     <parent>
