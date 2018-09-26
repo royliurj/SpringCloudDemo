@@ -13,8 +13,10 @@
         <module name="EurekaZuul" />
         <module name="Model" />
         <module name="ServiceFeign" />
+        <module name="ServiceFeign2" />
         <module name="ServiceOne" />
         <module name="ServiceRibbon" />
+        <module name="ServiceTwo" />
         <module name="StreamHello" />
         <module name="ZipkenServer" />
       </profile>
@@ -27,8 +29,10 @@
       <module name="EurekaZuul" target="1.8" />
       <module name="Model" target="1.8" />
       <module name="ServiceFeign" target="1.8" />
+      <module name="ServiceFeign2" target="1.8" />
       <module name="ServiceOne" target="1.8" />
       <module name="ServiceRibbon" target="1.8" />
+      <module name="ServiceTwo" target="1.8" />
       <module name="SpringCloudDemo" target="1.8" />
       <module name="StreamHello" target="1.8" />
       <module name="ZipkenServer" target="1.8" />

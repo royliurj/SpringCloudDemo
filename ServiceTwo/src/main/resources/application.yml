@@ -1,8 +1,8 @@
 server:
-  port: 8001
+  port: 8003
 spring:
   application:
-    name: service-one #服务名，也就是消费客户端需要的service id
+    name: service-two #服务名，也就是消费客户端需要的service id
 #  zipkin:
 #    base-url: http://localhost:9411 #zipkin server地址
 #  sleuth:
@@ -16,8 +16,8 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:1111/eureka/  #指定服务注册中心的地址
-#      defaultZone: http://user:123456@localhost:1111/eureka/  #指定服务注册中心的地址，注册中心需要认证时添加用户名和密码
+#      defaultZone: http://user:123456@localhost:1111/eureka/  #指定服务注册中心的地址
+      defaultZone: http://user:123456@localhost:1111/eureka/  #指定服务注册中心的地址，注册中心需要认证时添加用户名和密码
 ## 注册中心集群时使用
 #      defaultZone: http://peer2:3333/eureka/  #指定服务注册中心的地址
 

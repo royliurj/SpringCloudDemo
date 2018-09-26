@@ -23,6 +23,10 @@ public class RibbonService {
         return restTemplate.getForObject("http://service-one/hello",String.class);
     }
 
+    public String hello4(){
+        return restTemplate.getForObject("http://service-two/hello",String.class);
+    }
+
     @HystrixCommand(commandKey = "hello2", groupKey = "helloGroup", threadPoolKey = "helloThread")
     public String hello2(){
         return "asdf";

@@ -9,12 +9,12 @@ eureka:
     fetch-registry: false       #不需要去检索服务，因为注册中心的职责就是维护服务实例
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-security:
-  basic:
-    enabled: true   #开启基于Http basic的认证
-  user:
-    name: user
-    password: 123456
+#security:
+#  basic:
+#    enabled: true   #开启基于Http basic的认证
+#  user:
+#    name: user
+#    password: 123456
 
 
 

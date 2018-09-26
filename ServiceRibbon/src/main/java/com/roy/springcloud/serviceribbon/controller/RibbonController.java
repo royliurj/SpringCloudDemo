@@ -19,6 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
+import java.util.logging.Logger;
 
 @RestController
 public class RibbonController {
@@ -37,7 +38,15 @@ public class RibbonController {
 
     @GetMapping("/hello")
     public String hello(){
-        return ribbonService.hello();
+        String msg = ribbonService.hello();
+        System.out.println(msg);
+        return msg;
+    }
+    @GetMapping("/hello4")
+    public String hello4(){
+        String msg = ribbonService.hello4();
+        System.out.println(msg);
+        return msg;
     }
 
     @GetMapping("/helloAsync")
@@ -70,6 +79,15 @@ public class RibbonController {
     @GetMapping("/testRibbon")
     public String testRibbon(){
         ServiceInstance instance = loadBalancerClient.choose("service-one");
+        String msg = instance.getHost() + ":" + instance.getPort();
+        System.out.println(msg);
+        return instance.getHost() + ":" + instance.getPort();
+    }
+    @GetMapping("/testRibbon2")
+    public String testRibbon2(){
+        ServiceInstance instance = loadBalancerClient.choose("service-two");
+        String msg = instance.getHost() + ":" + instance.getPort();
+        System.out.println(msg);
         return instance.getHost() + ":" + instance.getPort();
     }
 

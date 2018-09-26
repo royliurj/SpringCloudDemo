@@ -20,6 +20,8 @@
         <module>Model</module>
         <module>ZipkenServer</module>
         <module>StreamHello</module>
+        <module>ServiceTwo</module>
+        <module>ServiceFeign2</module>
     </modules>
 
     <parent>

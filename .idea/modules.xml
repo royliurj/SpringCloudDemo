@@ -9,8 +9,10 @@
       <module fileurl="file://$PROJECT_DIR$/EurekaZuul/EurekaZuul.iml" filepath="$PROJECT_DIR$/EurekaZuul/EurekaZuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/Model/Model.iml" filepath="$PROJECT_DIR$/Model/Model.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiceFeign/ServiceFeign.iml" filepath="$PROJECT_DIR$/ServiceFeign/ServiceFeign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceFeign2/ServiceFeign2.iml" filepath="$PROJECT_DIR$/ServiceFeign2/ServiceFeign2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiceOne/ServiceOne.iml" filepath="$PROJECT_DIR$/ServiceOne/ServiceOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiceRibbon/ServiceRibbon.iml" filepath="$PROJECT_DIR$/ServiceRibbon/ServiceRibbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceTwo/ServiceTwo.iml" filepath="$PROJECT_DIR$/ServiceTwo/ServiceTwo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloudDemo.iml" filepath="$PROJECT_DIR$/SpringCloudDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/StreamHello/StreamHello.iml" filepath="$PROJECT_DIR$/StreamHello/StreamHello.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZipkenServer/ZipkenServer.iml" filepath="$PROJECT_DIR$/ZipkenServer/ZipkenServer.iml" />

@@ -1,7 +1,6 @@
 package com.roy.springcloud.servicefeign.config;
 
 import feign.Retryer;
-import feign.auth.BasicAuthRequestInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
